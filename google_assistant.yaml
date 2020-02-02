@@ -1,5 +1,5 @@
   project_id: home-assistant-265807
-  service_account: !include .google.token/home-assistant-e5f4db71ee40.json
+  service_account: !include .google.token/home-assistant-265807-b36665b2a302.json
   report_state: true
   exposed_domains:
     - climate
