@@ -1,0 +1,43 @@
+'1579289392335':
+  alias: learn_children_ac_power
+  sequence:
+  - data:
+      alternative: true
+      command: power toggle
+      device: children_ac
+    entity_id: remote.broadlink
+    service: remote.learn_command
+'1579292757757':
+  alias: power toggle children ac
+  sequence:
+  - data:
+      command: power toggle
+      device: children_ac
+    entity_id: remote.broadlink
+    service: remote.send_command
+'1579441927115':
+  alias: Learn Living room AC fan low cool Tempertures
+  sequence:
+  - data:
+      command:
+      - cool_21
+      - cool_22
+      - cool_23
+      - cool_24
+      - cool_25
+      - cool_26
+      - cool_27
+      device: living_room_ac
+    entity_id: remote.broadlink
+    service: remote.learn_command
+'1579442323077':
+  alias: Learn Living Room AC cool Fan Speed
+  sequence:
+  - data:
+      command:
+      - fan_low_cool
+      - fan_medium_cool
+      - fan_high_cool
+      device: living_room_ac
+    entity_id: remote.broadlink
+    service: remote.learn_command

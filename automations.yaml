@@ -1,0 +1,32 @@
+- id: '1580035300742'
+  alias: 'clean_the_house '
+  description: Clean house when everyone leaves after 60 minutes
+  trigger:
+  - entity_id: group.persons
+    for: 0:60:00
+    from: 'on'
+    platform: state
+    to: 'off'
+  condition:
+  - condition: and
+    conditions:
+    - condition: template
+      value_template: ">\n        {% set last = state_attr('automation.clean_the_house',\n\
+        \                                 'last_triggered') %}\n        {{ last is\
+        \ none or\n           as_timestamp(last)|timestamp_custom('%j')|int !=\n \
+        \          now().strftime('%j')|int }}"
+    - condition: time
+      weekday:
+      - sun
+      - mon
+      - wed
+      - thu
+      - fri
+      - sat
+  action:
+  - data: {}
+    entity_id: vacuum.roborock_s6
+    service: vacuum.start
+  - data:
+      message: Starting to clean the house
+    service: notify.mobile_app_tal_goldberg_s_sm_g950f

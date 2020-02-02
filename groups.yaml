@@ -1,0 +1,9 @@
+  persons:
+    name: All persons
+    entities:
+      - binary_sensor.carmen_presence
+      - binary_sensor.family_member_presence
+      - binary_sensor.galina_presence
+      - binary_sensor.nataly_goldberg_s_android_presence
+      - binary_sensor.tal_gold_s_android_presence
+      - binary_sensor.zehava_presence

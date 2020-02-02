@@ -1,0 +1,61 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+
+http:
+    base_url: https://goldnet.duckdns.org:8123
+    ssl_certificate: /ssl/fullchain.pem
+    ssl_key: /ssl/privkey.pem
+
+homeassistant:
+#  auth_providers:
+#   - type: legacy_api_password
+#     api_password: !secret http_password
+  customize: !include customize.yaml
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+# Redirect output to Synology NAS Maria DB
+recorder:
+  db_url: !secret db_url
+
+frontend:
+  themes: !include_dir_merge_named themes
+
+discovery:
+  ignore:
+    - igd
+    - yeelight
+yeelight:
+  devices:
+    10.100.102.26:
+      name: Sofa Light
+    10.100.102.8:
+      name: Living Room LED
+
+google_assistant: !include google_assistant.yaml
+remote: !include remotes.yaml
+smartir:
+switch: !include switchs.yaml
+vacuum:
+  - platform: xiaomi_miio
+    host: 10.100.102.50
+    token: !secret roborock_token
+    name: Roborock S6
+
+skybell:
+  username: !secret skybell_user
+  password: !secret skybell_password
+  
+camera: !include camera.yaml
+binary_sensor: !include binary_sensor.yaml
+climate: !include climate.yaml
+light: !include lights.yaml
+automation: !include automations.yaml
+sensor: !include sensors.yaml
+scene: !include scenes.yaml
+group: !include groups.yaml
+script: !include scripts.yaml

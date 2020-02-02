@@ -1,0 +1,22 @@
+  project_id: home-assistant-265807
+  service_account: !include home-assistant-e5f4db71ee40.json
+  report_state: true
+  exposed_domains:
+    - climate
+    - light
+    - vacuum
+    - scene
+  entity_config:
+    switch.living_room_shades:
+      name: Living Room Shades
+      expose: true
+    switch.balcony_shades:
+      name: Balcony Shades
+      expose: true
+    switch.children_ac:
+      name: Children AC
+      expose: true
+    light.kitchen_led:
+      expose: false
+    light.bedroom_shades:
+      expose: false

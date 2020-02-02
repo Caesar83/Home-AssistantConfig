@@ -1,0 +1,12 @@
+  - platform: template
+    sensors:
+      children_ac:
+        friendly_name: "Children AC"
+        value_template: >-
+          {% if is_state('switch.children_ac', 'off') %}
+            off
+          {% elif is_state('switch.children_ac', 'on') %}
+            on
+          {% else %}
+            failed
+          {% endif %}

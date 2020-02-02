@@ -1,0 +1,27 @@
+  - platform: smartir
+    name: Living Room AC
+    unique_id: living_room_ac
+    device_code: 1340
+    controller_data: 10.100.102.3
+    temperature_sensor: sensor.living_room_multisensor_temperature_measurement
+    humidity_sensor: sensor.living_room_multisensor_relative_humidity_measurement
+
+
+  - platform: smartir
+    name: Children AC
+    unique_id: children_ac
+    device_code: 1940
+    controller_data: 10.100.102.3
+    temperature_sensor: sensor.lia_multisensor_6_temperature_measurement
+    humidity_sensor: sensor.lia_multisensor_6_relative_humidity_measurement
+    power_sensor: binary_sensor.children_ac
+
+  - platform: smartir
+    name: Kitchen AC
+    unique_id: kitchen_ac
+    device_code: 1340
+    controller_data: 10.100.102.31
+    temperature_sensor: sensor.kitchen_motion_sensor_temperature_measurement
+
+  - platform: sensibo
+    api_key: !secret sensibo_api_key

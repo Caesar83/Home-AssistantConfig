@@ -1,0 +1,56 @@
+- id: '1580202053729'
+  name: Turn off ACs
+  entities:
+    climate.kitchen_ac:
+      commands_encoding: Base64
+      current_temperature: 22
+      device_code: 1340
+      fan_mode: low
+      fan_modes:
+      - low
+      - mid
+      - high
+      friendly_name: Kitchen AC
+      hvac_modes:
+      - 'off'
+      - heat
+      - cool
+      - fan_only
+      last_on_operation: heat
+      manufacturer: Tadiran
+      max_temp: 30
+      min_temp: 16
+      state: 'off'
+      supported_controller: Broadlink
+      supported_features: 9
+      supported_models:
+      - Unknown
+      target_temp_step: 1
+      temperature: 26
+    climate.living_room_ac:
+      commands_encoding: Base64
+      current_humidity: 51
+      current_temperature: 22.8
+      device_code: 1340
+      fan_mode: low
+      fan_modes:
+      - low
+      - mid
+      - high
+      friendly_name: Living Room AC
+      hvac_modes:
+      - 'off'
+      - heat
+      - cool
+      - fan_only
+      last_on_operation: heat
+      manufacturer: Tadiran
+      max_temp: 30
+      min_temp: 16
+      state: 'off'
+      supported_controller: Broadlink
+      supported_features: 9
+      supported_models:
+      - Unknown
+      target_temp_step: 1
+      temperature: 23

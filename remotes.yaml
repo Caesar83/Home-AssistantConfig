@@ -1,0 +1,9 @@
+ - platform: broadlink
+   host: 10.100.102.3
+   mac: '78:0f:77:00:ca:4e'
+   name: RM Pro+
+   timeout: 15
+
+ - platform: harmony
+   name: Living Room Harmony Hub
+   host: 10.100.102.19

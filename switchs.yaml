@@ -1,0 +1,65 @@
+  - platform: broadlink
+    host: 10.100.102.31
+    mac: 'c8:f7:42:17:52:a7'
+
+  - platform: broadlink
+    host: 10.100.102.3
+    mac: '78:0f:77:00:ca:4e'
+    type: rm2_pro_plus
+    timeout: 15
+    switches:
+#      living_room_ac:
+#        friendly_name: "Living Room AC"
+#        command_on: 'JgAQAQABBo43FxM7FDoVORU6FTkVOhQ6OBYSPBU5Fjk4FhU6ETsUPRE8FTk5FhI8OBc5FRQ6FDsTOhM8EjwSPRQ6FDoUOhU6FTkSPBU6FDoUOhQ6FTkTPBU5FTkVOhQ6OBY6FBU6FDoSPRQ6EjwSPBU5FToVORQ7NxcTOzoUORUVOhQ6EjwUOzQABBEAAQSQOBcTOxQ6FDoVORQ6FjkSPTcXEzsUOhU5OxQUOhU6FDoTOxI8OhQSPDwUORURPRQ6EjwUOhI8FjkVOhM7EjwSPRE8FTkVOhU6EzsTOxI8FToRPBU6FDsTOzkVORUSPBU7FDkUOxM7EzsSPBQ6FDoTPTcXEjw3FzoUEjwUOhU6FDs0AA0FAAAAAAAAAAA'
+#        command_off: 'JgAQAQABBJE4FhI8EjwSPRE9ET0SPBM8OBYSPBI9ET04FhM7EzwSPBI8Ej04FhE9OBY4FxI8EzsSPRE9ET0SPBQ7EjwSPBI9ET0RPRI8FDsSPBI8Ej0RPhI7EjwUOxI8EjwSPTgWOBcRPBQ7EjwSPBI9ET0RPRI9Ejw5FTkVEjw5FhE9EjwTPDQABA4AAQWROBUSPRI8EjwSPBI9ET0RPjcXEjwSPBI8ORYROhY7FDsSPBI8ORUSPTgWORUSPRI8EjwSPBI9ET0RPRI9EjwTOxM7Ej0RPRE9Ej0SPBI8EzsTPBI8EzsTPBM7Ejw4FjkWET0RPRI9EjwSPBI8EjwSPhE8OBc4FhI8OBYSPBI9ET00AA0FAAAAAAAAAAA'
+
+      children_ac:
+        friendly_name: "Children AC"
+        command_on: 'JgC+AGKCICFBPiEfQR8hHx8hIR8fISFAHiEgIB8gPyEfIR8hIh8hHx4hIh8eIR8hHyEfIR8hISAeICIfIR8gP0EfY4IeIT9AICA/ISIfHiEfISIfIT8eIR8hHyE/ICAgHyEiHx4hIh8eIR8hHyEhHx8hHyEfIR8hIR8eIR9BQh9jgR4hP0EfIT8gHyEiHyEfIR8eQSEfHyEfIUEgICAgICAfIR8iHR8hHyEfIR8hIh8eISEgICAeIR8hID9BH4IADQUAAAAAAAAAAAA='
+        command_off: 'JgC+AGKCICFBPiEfQR8hHx8hIR8fISFAHiEgIB8gPyEfIR8hIh8hHx4hIh8eIR8hHyEfIR8hISAeICIfIR8gP0EfY4IeIT9AICA/ISIfHiEfISIfIT8eIR8hHyE/ICAgHyEiHx4hIh8eIR8hHyEhHx8hHyEfIR8hIR8eIR9BQh9jgR4hP0EfIT8gHyEiHyEfIR8eQSEfHyEfIUEgICAgICAfIR8iHR8hHyEfIR8hIh8eISEgICAeIR8hID9BH4IADQUAAAAAAAAAAAA='
+
+      bedroom_ceilling_light:
+        friendly_name: "Bedroom Ceilling light"
+        command_on: 'sn8qAAYGEwUHCwwGBgUGBgYGBgYGCwwGBgYGCwYFBwUHBQcGBgYGBgYFBwUHBgAAAAAAAAAAAAAAAAAA'
+        command_off: 'sv8mAAcGFAUGCwwFBgYHBgYGBgYGCwwGBwUGCwcFBwYGBgsLBwUMBQYLAAA='
+
+      balcony_shades:
+        friendly_name: "Balcony Shades"
+        command_on: 'sn8mAAYGFAYGCwwGBgYGBgYGBgYGBgYGBgsLCwcFBgYGBgwLBgYLCwYGAAA='
+        command_off: 'sn8oAAYGFAUGCwwGBgUHBgYFBwYGBQYGBgsMCwYFBgYHBQYGBwUMCwYGBwY='
+
+      living_room_shades:
+        friendly_name: "Living Room Shades"
+        command_on: 'sn8oAAYGEwYGCwsGBgYGBgYGBgYGBgYGBgsMCwYFBgYGBgsLBgYGBQYGBwU='
+        command_off: 'sn8qAAYGEwYGCwsGBgYFBgYGBQcGBgYHBQwLCwYGBgYGBgYGBgYGBgYGBgYGBgAAAAAAAAAAAAAAAAAA'
+
+      bedroom_spotlight:
+        friendly_name: "Bedroom Spotlight"
+        command_on: 'sn8oAAYGFAUGCwwFBgYGBgYGBgYGCwsGBgYGCwYGBgUHBQwLBgYHBQcFBwU='
+        command_off: 'sv8mAAcGFAUGCwwFBgYHBgYGBgYGCwwGBwUGCwcFBwYGBgsLBwUMBQYLAAA='
+
+      bathroom_lights:
+        friendly_name: "Bathroom Lights"
+        command_on: 'sv8mAAYGEwYGCwsHBgYGBgYGBgYGCwsGBgYFDAYGBgYGBgsGBgsLBwYLAAA='
+        command_off: 'sv8mAAYGEgYGCwsGBgYFBwUHBgYGCwsGBgYGCwYGBgcGBgsMCwYGBgYMAAA='
+
+      kitchen_ceilling_lights:
+        friendly_name: "Kitchen Ceilling Lights"
+        command_on: 'sr4kAAYGEgYGCwsGBgYFBgYGBQYGBgYGBQwLBgYLCwwLBgUMCwYGCwAAAAA='
+        command_off: 'sswkAAUHEwYGDAsHBQcFBgUGBgYFBgYHBQwLBgYLCwsLDAsHBgcGCwAAAAA='
+
+      living_roomn_ceilling_lights:
+        friendly_name: "Living Room Ceilling Lights"
+        command_on: 'sv8mAAYGEwYGCwsHBgYGBgYGBgYFBgYHBQwLDAYGBgYGBgsGBgsLBgYMAAA='
+        command_off: 'spAmAAYGEwYGCwsHBgcGBgUHBgYGBgYHBQwLDAYHBgYGBgsMCwYFBgYMAAA'
+
+      closet_light:
+        friendly_name: "Closet Light"
+        command_on: 'slUkAAYGEwYFDAsGBgYGBgYGBgYGBgYGBgsLBwULCwwLCwYGCwYGCwAAAAA='
+        command_off: 'siEmAAUGEwcFCwsGBQcGBgYGBQcFBwUGBgsLDAYGBgYGBgsMCwYGBgUMAAA='
+
+      entrance_light:
+        friendly_name: "Entrance Light"
+        command_on: 'spIkAAUHEwYGCwsGBQYGBgYGBgYGBgUGBgsLBgYLCwsLDAYGCwYGCwAAAAA='
+        command_off: 'slUkAAYGEwYFDAsGBgYGBgYGBgYGBgYGBgsLBwULCwwLCwYGCwYGCwAAAAA='
+

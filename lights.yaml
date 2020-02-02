@@ -1,0 +1,29 @@
+  - platform: switch
+    name: Bedroom Ceilling Light
+    entity_id: switch.bedroom_ceilling_light
+
+  - platform: switch
+    name: Bathroom Lights
+    entity_id: switch.bathroom_lights
+
+  - platform: switch
+    name: Bedroom Spotlight
+    entity_id: switch.bedroom_spotlight
+
+  - platform: switch
+    name: Closet Light
+    entity_id: switch.closet_light
+
+  - platform: switch
+    name: Entrance Light
+    entity_id: switch.entrance_light
+
+  - platform: switch
+    name: Living Room ceilling Lights 
+    entity_id: switch.living_roomn_ceilling_lights
+
+  - platform: switch
+    name: Kitchen Ceilling Lights
+    entity_id: switch.kitchen_ceilling_lights
+
+
